@@ -30,7 +30,7 @@ window.onload = function () {
 
 function registerStart(lf) {
   class StartNode extends CircleNode {
-  }
+  } 
   class StartModel extends CircleNodeModel {
     constructor(data, graphModel) {
       if (data.text && typeof data.text === 'string') {

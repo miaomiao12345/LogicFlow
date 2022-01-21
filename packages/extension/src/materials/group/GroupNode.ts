@@ -3,7 +3,7 @@ import { RectNode, RectNodeModel } from '@logicflow/core';
 class GroupNodeModel extends RectNodeModel {
   readonly isGroup = true;
   children = new Set();
-  isRestrict = true; // 其子节点是否被禁止通过拖拽移出分组。 默认false，允许拖拽移除分组。
+  isRestrict = false; // 其子节点是否被禁止通过拖拽移出分组。 默认false，允许拖拽移除分组。
   setAttributes() {
     this.width = 500;
     this.height = 200;
